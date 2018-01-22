@@ -1,0 +1,12 @@
+---
+
+
+etcd_peer_port: 2380
+etcd_client_port: 2379
+etcd_replicas: 3
+etcd_image: "k8s.gcr.io/etcd-amd64"
+etcd_image_tag: "2.2.5"
+etcd_image_pull_policy: "Always"
+etcd_cpu: "100m"
+etcd_memory: "512Mi"
+etcd_storage: "1Gi"

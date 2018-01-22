@@ -1,0 +1,9 @@
+---
+
+- name: Install etcd
+  command: kubectl apply -f -
+  args:
+    stdin: "{{ item }}"
+  with_items:
+    - "{{ lookup('template', 'service.yml') }}"
+    - "{{ lookup('template', 'statefulset.yml') }}"
